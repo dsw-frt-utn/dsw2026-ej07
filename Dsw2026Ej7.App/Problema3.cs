@@ -1,6 +1,8 @@
 using Dsw.Ut2;
-using Dsw.Ut2.Library.Attributes; 
- namespace Dsw2026Ej7.App;
+using Dsw.Ut2.Library.Attributes;
+using Dsw.Ut2.Library.Data;
+
+namespace Dsw2026Ej7.App;
 /*
  * Problema N° 4
  * Cantidad de Pruebas: 5
@@ -11,7 +13,7 @@ using Dsw.Ut2.Library.Attributes;
  * El parámetro Bomb representa una granada, que al explotar genera una excepción.
  * Existen 3 tipos de granada, Flash, Smoke y Hand. Cada una al estallar genera su propio 
  * tipo de excepción con un mensaje particular (FlashException, SmokeException y HandException)
- * Cada tipo tiene su propio mensaje.
+ * CADA TIPO TIENE SU PROPIO MENSAJE.
  * 
  * Deberá explotarse la granada con el método disponible en Bomb y retornar
  * una cadena de la forma {tipoGranada}-{mensajeDeExplosion}
@@ -22,7 +24,7 @@ using Dsw.Ut2.Library.Attributes;
  * 
  * Aclaraciones:
  *   - El mensaje específico después del guión es el que contiene la excepción
- *   - Si una granada no explota, retornar null
+ *   - Si una granada no explota, retornar una cadena vacía.
  *
  * Ayuda: El método GetType de la clase Object devuelve el tipo de un objeto, con éste se puede
  *        saber el nombre de una clase.
